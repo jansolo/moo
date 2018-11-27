@@ -13,7 +13,7 @@ module.exports = {
       return;
     }
 
-    arguments.map(function(arg) {
+    return arguments.map(function(arg) {
       if (arg.split(' ')[0] === argumentName) {
         return arg.substring(argumentName.length).trim();
       }
